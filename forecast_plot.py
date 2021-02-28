@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
+from forecast_calc import ForecastCalc
 
 
-class ForecastPlot:
+class ForecastPlot (ForecastCalc):
     # will plot the chat
     # input prior sales and forecasted sales (y axis)
     # Months -4 to +3 (X axis)
