@@ -1,0 +1,37 @@
+
+The forecast system is a basic and simple app that was designed to calculated the forecast using weighted moving average.
+
+The user should input the prior 4 months of sales (or volume) and the app will calculate the moving average for the next 3 months.
+The weight will be input based on 3 pre defined choices.
+
+The result will be displayed in the screen and in a plot, that will be saved into a file in a cloud based system. An URL will be provided for the user to download the file.
+
+
+class DisplayItro
+    # will display a header in the screen
+
+class ForecastCalc:
+    # responsable for calculate the forecast
+    # input: data for the prior months and weights
+    # output: sales forecast for 3 next 3 months
+
+class ForecastPlot:
+    # will plot the chat
+    # input prior sales and forecasted sales (y axis)
+    # Months -4 to +3 (X axis)
+    # output: plot a chart and save into a file
+
+class ChartUpload:
+    # Upload the plot file to cloud service
+    # generate a URL on screen
+    # input filename / cloud service info
+
+
+
+
+
+
+
+
+
+
