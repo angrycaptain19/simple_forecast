@@ -1,6 +1,5 @@
 # Module to perform the forecast calculations
 
-
 class ForecastCalc:
     # responsable for calculate the forecast
     # input: data for the prior months and weights
@@ -20,7 +19,6 @@ class ForecastCalc:
         self.forecast_m1 = 0
         self.forecast_m2 = 0
         self.forecast_m3 = 0
-        print(f'Weights: {self.weight}')
 
     def forecast_calc(self):
 
