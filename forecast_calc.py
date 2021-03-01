@@ -5,16 +5,13 @@ class ForecastCalc:
     # input: data for the prior months and weights
     # output: sales forecast for 3 next 3 months
     def __init__(self,
-                 previous_month1,
-                 previous_month2,
-                 previous_month3,
-                 previous_month4,
+                 period,
                  weight
                  ):
-        self.previous_month1 = previous_month1
-        self.previous_month2 = previous_month2
-        self.previous_month3 = previous_month3
-        self.previous_month4 = previous_month4
+        self.previous_month1 = period[3]
+        self.previous_month2 = period[2]
+        self.previous_month3 = period[1]
+        self.previous_month4 = period[0]
         self.weight = weight
         self.forecast_m1 = 0
         self.forecast_m2 = 0
