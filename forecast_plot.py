@@ -20,29 +20,32 @@ class ForecastPlot:
     def plot_chart(self):
 
         # define the bar color for the chart
-        bar_color = ['#abaaaa',
-                     '#abaaaa',
-                     '#abaaaa',
-                     '#abaaaa',
-                     '#eeeeee',
-                     '#eeeeee',
-                     '#eeeeee'
+        bar_color = ['#6ba05e',
+                     '#6ba05e',
+                     '#6ba05e',
+                     '#6ba05e',
+                     '#a5cec8',
+                     '#a5cec8',
+                     '#a5cec8'
                      ]
 
         fig, ax = plt.subplots()
-        ax.bar(self.x_period,self.period, color=bar_color)
+        ax.bar(self.x_period, self.period, color=bar_color)
         #ax.axvspan(-.5,3, facecolor='#2ca02c', alpha = .1)
-
-        ax.set(xlabel='Periods (n)', ylabel='Realized / Forecasted',
-               title=self.title
+        fig.suptitle(self.title,
+                     fontsize=11,
+                     fontstyle='italic'
+                     )
+        ax.set(xlabel='Periods (n)', ylabel='Realized / Forecasted'
                )
+
 
         # save the plot in 'files' directory
         # change the directory
         working_dir = os.getcwd()
 
         # save the file
-        fig.savefig(working_dir + '/file/'+ 'forecast.png',
+        fig.savefig(working_dir + '/file/'+ 'Forecast_WMA.png',
                     dpi = 100,
                     transparent=True
                     )

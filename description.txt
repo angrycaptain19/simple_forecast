@@ -27,6 +27,10 @@ class ChartUpload:
     # input filename / cloud service info
 
 
+URL at Repl.it
+
+https://repl.it/@gbneto/Simpleforecastwma?embed=1
+
 
 
 
