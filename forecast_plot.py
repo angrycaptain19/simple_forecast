@@ -50,7 +50,7 @@ class ForecastPlot:
                     transparent=True
                     )
 
-        plt.show()
+        #plt.show()
 
 
 

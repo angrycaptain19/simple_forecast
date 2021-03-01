@@ -8,9 +8,9 @@ class WeightChoose:
         self.option = 'A'
 
         print('Choose one option for the period weights\n')
-        print('Option A:   Period -1 = 50%   Period -2 = 25%   Period -1 = 15%   Period -2 = 10%')
-        print('Option B:   Period -1 = 40%   Period -2 = 30%   Period -1 = 20%   Period -2 = 10%')
-        print('Option C:   Period -1 = 30%   Period -2 = 30%   Period -1 = 20%   Period -2 = 20%')
+        print('Option A:   Period -1 = 50%  Period -2 = 25%  Period -1 = 15%  Period -2 = 10%')
+        print('Option B:   Period -1 = 40%  Period -2 = 30%  Period -1 = 20%  Period -2 = 10%')
+        print('Option C:   Period -1 = 30%  Period -2 = 30%  Period -1 = 20%  Period -2 = 20%')
 
         self.option = input('Input the option letter: ').upper()
 
